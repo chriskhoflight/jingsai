@@ -1,0 +1,100 @@
+.layout-logo{
+  float: left;
+  position: relative;
+  top: 8px;
+  img{
+    height: 44px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+ 
+.logo-text{
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.lock-screen-back {
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 0 0 0 #667aa6 inset;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 3s;
+}
+
+.header-main {
+
+  &-header {
+    // min-width: 710px;
+    // height: 60px;
+    position: relative;
+    padding-left: 30px;
+    .header-avator-con {
+      .language {
+          display: inline-block;
+          width: 30px;
+          text-align: center;
+          cursor: pointer;
+          vertical-align: middle;
+      }
+      .message-con {
+          display: inline-block;
+          width: 30px;
+          text-align: center;
+          cursor: pointer;
+          i {
+              vertical-align: middle;
+          }
+      }
+      .user-dropdown {
+          &-menu-con {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 135px;
+              height: 100%;
+              .main-user-name {
+                  font-size: 14px;
+                  display: inline-block;
+                  width: 58px;
+                  margin-right: 5px;
+                  word-break: keep-all;
+                  white-space: nowrap;
+                  vertical-align: middle;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  text-align: right;
+              }
+          }
+          &-innercon {
+              height: 100%;
+              padding-right: 14px;
+          }
+      }
+      .full-screen-btn-con {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+        i {
+            vertical-align: middle;
+        }
+      }
+      .lock-screen-btn-con {
+          display: inline-block;
+          width: 30px;
+          text-align: center;
+          cursor: pointer;
+          i {
+              vertical-align: middle;
+          }
+      }
+    }
+  }
+}
